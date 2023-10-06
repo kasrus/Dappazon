@@ -71,7 +71,7 @@ contract Dappazon {
         Order memory order = Order(block.timestamp, item);
 
         //Save order to chain
-        orderCount[msg.sender]++;
+        orderCount[msg.sender]++; //order id
         orders[msg.sender][orderCount[msg.sender]] = order;
 
         // Subtract stock
